@@ -1,0 +1,34 @@
+<div class="intro">
+<h1>{{this.portfolioTitle}}</h1>
+<h2>{{this.blurb}}</h2>
+<div class="social-media">
+    <ng-container *ngFor="let link of socialMediaLinks;">
+        <div  class="link" *ngIf="link.name === 'github'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faGithub"></fa-icon></a>
+        </div>
+        <div class="link" *ngIf="link.name === 'linkedIn'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faLinkedIn"></fa-icon></a>
+        </div>
+        <div class="link" *ngIf="link.name === 'medium'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faMedium"></fa-icon></a>
+        </div>
+        <div class="link" *ngIf="link.name === 'mail'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faEnvelope"></fa-icon></a>
+        </div>
+        <div class="link" *ngIf="link.name === 'twitter'">
+            <a href="{{link.url}}"><fa-icon class="fa-2x" [icon]="faTwitter"></fa-icon></a>
+        </div>
+     </ng-container>
+    </div>
+</div>
+
+<!-- You may change the order of your sections here -->
+<div id="experience">
+    <app-main-section [sectionData]="experiencesSection"></app-main-section>
+</div>
+<div id="projects">
+    <app-main-section [sectionData]="projectsSection"></app-main-section>
+</div>
+<div id="writings">
+    <app-main-section [sectionData]="writingsSection"></app-main-section>
+</div>

@@ -1,0 +1,43 @@
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  h2 {
+    font-size: 2rem;
+  }
+}
+.teams {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  .item {
+    
+    @media(max-width: 1800px){
+        flex: 1 1 auto;
+        max-width: 30%; /* Ensure images don't exceed their container's width */    
+    }
+   
+    @media (max-width: 800px) {
+        flex: 1 1 auto;
+      max-width: 100%;
+    }
+    height: auto;
+    h3 {
+      text-wrap: wrap;
+    }
+  }
+
+  overflow: scroll;
+}
+a {
+  text-decoration: none;
+  color: #0a3ea6;
+  :hover {
+    color: #4a67a1;
+    font-style: italic;
+    font-style: bold;
+    font-weight: 800;
+  }
+}

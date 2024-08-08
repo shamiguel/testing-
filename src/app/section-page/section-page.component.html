@@ -1,0 +1,12 @@
+<a class="link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home </a>
+<div class="heading">
+    <h2>{{this.section.name}}</h2>
+</div>
+<div class="cards" >
+    <div *ngFor="let experience of this.section.content">
+        <a routerLink="/{{this.section.name.toLocaleLowerCase()}}/{{experience.id}}">
+            <img src={{experience.image}} width="200" height="100" >
+            <h3>{{experience.name}}</h3>
+        </a>
+    </div>
+</div>

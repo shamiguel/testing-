@@ -1,0 +1,18 @@
+<hr class="solid">
+<div class="footer">
+    <div class="title">
+        <p>YOUR NAME</p>
+    </div>
+    <div class="links">
+        <div id="portfolio-links">
+            <div *ngFor="let link of socialMediaLinks">
+                <a class="link" href="{{link.url}}">{{link.name}}</a>
+            </div>
+        </div>
+        <div id="socialmedia-links">
+            <div *ngFor="let link of portfolioLinks">
+                <a class="link" href="{{link.url}}">{{link.name}}</a>
+            </div>
+        </div>
+    </div>
+</div>

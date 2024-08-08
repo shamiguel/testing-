@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+hr{
+    border-top: 2px solid #bbb;
+    margin-top: 2rem;;
+}
+.link{
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+#socialmedia-links{
+    display: flex;
+    flex-direction: row;
+    ::after{
+        margin-right: 10px;
+    }
+}
+#portfolio-links{
+    display: flex;
+    flex-direction: row;
+}
