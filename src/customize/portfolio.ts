@@ -1,7 +1,7 @@
 import { Section, Content, Link } from './interfaces';
 
 export const intro = {
-  portfolioName: 'Your name right here!',
+  portfolioName: 'TESTING!!!!!',
   blurb:
     "I'm a software engineer! I'm a Googler and I pushed this from my main branch! Even though my Github Pages deploys from my prod branch!",
 };
